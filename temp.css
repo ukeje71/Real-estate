@@ -1,5 +1,5 @@
 /* CSS reset */
-@import url("./reset.css");
+@import url("reset.css");
 /* ====GENERAL STYLES==== */
 
 
@@ -22,8 +22,8 @@
 
 
   /* ====RESPONSIVENESS FOR DESKTOP SCREENS==== */
-  @media screen and (min-width:900px) and (max-width:2000px) {
-    
+  @media screen and (min-width:900px) and (max-width:2000px) 
+  {
 
 header{
     display: flex;
@@ -71,7 +71,7 @@ nav .button:hover{
     padding: 1rem;
     width: 100%;
    color: #fff;
-   background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+   background-image: url(images/bg-pattern-intro-right-desktop.svg);
    background-repeat: no-repeat;
    background-position: right 10px center;
 
@@ -126,6 +126,7 @@ nav .button:hover{
 }
 .feature{
     max-width: 15rem;
+    margin-bottom: 4rem;
 }
 .container h2{
     text-align: left;
@@ -147,10 +148,74 @@ nav .button:hover{
     font-weight: 1.5em;
     margin-bottom: 1rem;
 }
+
+
+.How-we-work{
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+    background-color: var(--primary-dark-violet);
+    padding: 4rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:right 4px center;
+  }
+  
+  .How-we-work .more{
+      color: #fff;
+      font-size: 3em;
+      text-align: left;
+  }
+  .How-we-work  button{
+      background-color: var(--primary-dark-violet);
+      border: 2px solid #fff;
+      /* height: 4rem; */
+      width: 30%;
+      place-self: center;
+      color: #fff;
+      transition: 0.3s ease-in;
+  }
+  .How-we-work  button:hover{
+  background-color: #fff;
+  color: var(--neutral-very-dark-violet);
+  }
+
+footer{
+width: 90%;
+margin: 0 auto;
+background-image: url(images/bg-pattern-footer-desktop.svg);
+background-repeat: no-repeat;
 }
 
+  footer .conac{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    font-size: 2em;
+    margin-bottom: 4rem; 
+  }
+
+  footer .media{
+    display: flex;
+    gap: 15px;
+}
+.line3{
+    width: 100% ; 
+    height: 2px ;
+    background-color: var(--neutral-dark-grayish-violet);
+   
+}
+footer .contact-list{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+margin-top: 2rem;
+}
+  }
 /* RESPONSIVENESS FOR TABLET SCREENS */
-@media screen and (min-width:767px) and (max-width:1004px) {
+@media screen and (min-width:600px) and (max-width:1004px) {
 
     header{
         display: flex;
@@ -198,7 +263,7 @@ nav .button:hover{
         padding: 1rem;
         width: 100%;
        color: #fff;
-       background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+       background-image: url(images/bg-pattern-intro-right-desktop.svg);
        background-repeat: no-repeat;
        background-position: right 10px center;
     
@@ -253,6 +318,7 @@ nav .button:hover{
 }
 .feature{
     max-width: 15rem;
+    margin-bottom: 3rem;
 }
 .container h2{
     text-align: left;
@@ -261,7 +327,7 @@ nav .button:hover{
 }
 .line2{
     width: 9rem;
-    height: 4px;
+    height: 3px;
     background:var(--primary-grayish-blue);
     margin-top: 8rem;
     margin-left: 1.5rem;
@@ -280,18 +346,25 @@ nav .button:hover{
 .How-we-work{
     background-color: var(--primary-dark-violet);
     padding: 4rem;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:right 4px center;
+    background-size: 20rem;
   }
   
   .How-we-work .more{
       color: #fff;
-      font-size: 1.5em;
+      font-size: 2em;
       text-align: center;
   }
   .How-we-work  button{
       background-color: var(--primary-dark-violet);
       border: 2px solid #fff;
-      width: 100%;
-      padding: 6px;
+      margin-left: 16rem;
+      padding: 4px 19px 4px;
       margin-top:1rem ;
       color: #fff;
       transition: 0.3s ease-in;
@@ -306,7 +379,7 @@ nav .button:hover{
 
   
 /* MOBILE SCREENS RESPONSIVENESS */
-@media screen and (min-width: 120px) and (max-width: 767px) {
+@media screen and (min-width: 120px) and (max-width: 600px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -454,7 +527,7 @@ nav .button:hover{
 .How-we-work{
   background-color: var(--primary-dark-violet);
   padding: 4rem;
-  background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+  background-image: url(images/bg-pattern-how-we-work-mobile.svg);
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
@@ -478,5 +551,4 @@ background-color: #fff;
 color: var(--neutral-very-dark-violet);
 }
 
-
-} 
+  }
